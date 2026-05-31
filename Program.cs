@@ -1,4 +1,4 @@
-﻿/*Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("Hello, World!");
 int a;
 int b;
 a=10;
@@ -13,23 +13,23 @@ if(int.TryParse(Console.ReadLine(), out int numero))
     if (numero > 0)
     {
         Console.WriteLine("valor de numero: "+numero);
-        int resultado=0;
+        int result=0;
         while (numero > 0)
         {
             int digito = numero % 10;
-            resultado = resultado * 10 + digito;
+            result = result * 10 + digito;
             numero /= 10;
 
             // Control de overflow
-            if (resultado > int.MaxValue)
+            if (result > int.MaxValue)
                 numero=0;
         }
-        Console.WriteLine("valor de numero invertido: "+resultado);
+        Console.WriteLine("valor de numero invertido: "+result);
     }else
         Console.WriteLine("El numero debe ser mayor que 0");
 }else
-    Console.WriteLine("Entrada no valida");*/
-
+    Console.WriteLine("Entrada no valida");
+//=====================================================================================================================================================
 float numOp, vAbsoluto;
 double cuadrado, raiz, sen, cos, enteroPuro;
 int pNum, sNum;
